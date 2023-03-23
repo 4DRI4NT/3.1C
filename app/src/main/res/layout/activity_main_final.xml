@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263143"
+    tools:context=".MainActivityFinal">
+
+    <TextView
+        android:id="@+id/scoreTitle"
+        android:layout_width="162dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="@string/scoreTitle"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congratsText" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FF2E363C"
+        android:text="@string/finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redoButton"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/redoButton"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FF2E363C"
+        android:text="@string/newQuiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="162dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="_"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreTitle" />
+
+    <TextView
+        android:id="@+id/congratsText"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="152dp"
+        android:gravity="center"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:text="@string/congrats"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
